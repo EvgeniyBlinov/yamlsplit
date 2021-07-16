@@ -6,11 +6,15 @@ Simple python script to split large yaml file by pattern
 ## Install
 
 ```sh
+curl -s https://raw.githubusercontent.com/EvgeniyBlinov/yamlsplit/master/yamlsplit -o ~/.local/bin/yamlsplit
+chmod +x ~/.local/bin/yamlsplit
+
 ```
 
 ## Usage
 
 ```sh
+curl -sL https://github.com/fluxcd/flux2/releases/latest/download/install.yaml | env APP_OUT=./out yamlsplit
 ```
 
 ## License
